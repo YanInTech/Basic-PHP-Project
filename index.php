@@ -28,6 +28,9 @@
             </ol>
         </div>    
     </div>
-    
 </body>
 </html>
+
+<?php
+    include ('../includes/footer.html');
+?>

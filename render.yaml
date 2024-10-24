@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: my-php-app
+    env: static
+    buildCommand: ""
+    startCommand: "apt-get update && apt-get install -y php && php -S 0.0.0.0:$PORT"

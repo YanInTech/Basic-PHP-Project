@@ -1,0 +1,12 @@
+.sample{
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    margin: 20px;
+    padding: 12px;
+    background-color: #013F6A;
+    border: 1px solid pink;
+    border-radius: 5px;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+}

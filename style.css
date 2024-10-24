@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+    --gray: #E0E0E0;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 60px 120px 0;
+}
+
+h1 {
+    font-size: 36px;
+    font-family: 'Open Sans';
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-size: 24px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+h3 {
+    font-size: 18px;
+    font-family: 'Open Sans';
+    font-weight: normal;
+    letter-spacing: 2px;
+}
+
+p {
+    font-size: 14px;
+    font-family: 'Open Sans';
+    font-weight: normal;
+    letter-spacing: 2px;
+    line-height: 21px;
+}
+
+hr {
+    border: none;
+    background-color: var(--gray);
+    height: 2px;
+}
+
+div {
+    width: auto;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.box {
+    border: 2px solid var(--gray);
+    box-shadow: 2px 4px 5px 0px var(--gray);
+}
+
+.nameSection {
+    padding: 12px;
+    display: grid;
+    gap: 4px;
+}
+
+.list {
+    padding: 12px 36px;
+}
+
+.list ol {
+    display: grid;
+    gap: 12px;
+}
+
+.list ol li:hover {
+    /* background-color: aliceblue; */
+    transform: scaleY(1.5);
+}
+
+footer {
+    background-color: var(--gray);
+    position: absolute;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+    padding: 12px 0;
+    margin-top: 120px;
+}

@@ -1,0 +1,55 @@
+.box{
+    border: 2px solid var(--primary);
+    text-align: center;
+    padding: 30px 0;
+    border-radius: 12px;
+}
+
+.nameSection{
+    margin-bottom: 30px;
+}
+
+.list ul{
+    list-style-type: none;
+}
+
+.list ul li{
+    margin-bottom: 12px;
+}
+
+.list ul li:hover{
+    background-color: var(--primary);
+    transform: scaleY(1.5);
+}
+
+.list ul li a:hover{
+    color: var(--secondary);
+}
+
+.list ul li a::before{
+    content: ""; /* Empty content by default*/
+    position: relative;
+    bottom: 10%;
+    right: 3%;
+    transform: scaleY(0); /* Hide dash initially*/
+}
+
+.list ul li a::after{
+    content: ""; /* Empty content by default*/
+    position: relative;
+    bottom: 10%;
+    left: 3%;
+    transform: scaleY(0); /* Hide dash initially*/
+}
+
+.list ul li a:hover::before{
+    content: "\2014"; /* dash symbol appears when hovered*/
+    transform: scaleY(1.5);
+    color: var(--secondary);
+}
+
+.list ul li a:hover::after{
+    content: "\2014"; /* dash symbol appears when hovered*/
+    transform: scaleY(1.5);
+    color: var(--secondary);
+}

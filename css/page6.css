@@ -25,39 +25,38 @@
     gap: 54px;
 }
 
-form input{
-    margin: 10px 0;
-    border: 1px solid var(--primary);
-    width: 200px;
-    height: 23px;
-    padding: 0 3px;
-}
-
-.buttons input{
-    border: none;
-    outline: none;
-    width: 161px;
-    height: 45px;
-    background-color: var(--primary);
-    border-radius: 4px;
-    color: var(--white);
-    margin-top: 10px;
-}
-
-.buttons input:hover{
-    color: var(--secondary);
-}
-
 .divide{
     display: flex;
     justify-content: space-between;
+    height: 300px;
+}
+
+.input input{
+    width: 60px;
+    height: 23px;
+    border: 1px solid var(--primary);
+    margin-bottom: 10px;
+}
+
+
+.input input[type="submit"]{
+    border: none;
+    outline: none;
+    background-color: var(--primary);
+    width: 99px;
+    height: 45px;
+    border-radius: 4px;
+    color: var(--white);
+}
+
+.input input[type="submit"]:hover{
+    color: var(--secondary);
 }
 
 .result{
+    width: 552px;
     border: 2px solid var(--primary);
-    width: 452px;
     padding: 30px;
-    margin-bottom: 30px;
 }
 
 .result h3{
@@ -65,25 +64,8 @@ form input{
     margin-bottom: 10px;
 }
 
-.result p span{
-    width: 207px;
+.result span{
     display: inline-block;
+    width: 157px;
 }
 
-.function h3{
-    margin: 10px 0;
-    font-weight: 600;
-}
-
-
-.function p span{
-    display: inline-block;
-    width: 450px;
-    margin-bottom: 10px;
-}
-
-.function p .second{
-    background-color: aliceblue;
-    display: inline-block;
-    width: 500px;
-}

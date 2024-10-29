@@ -25,26 +25,31 @@
     gap: 54px;
 }
 
-form input{
-    margin: 10px 0;
+label {
+    display: inline-block;
+    width: 233px;
+}
+
+input{
+    width: 199px;
+    height: 23;
+    padding: 0px 3px;
+    margin-bottom: 10px;
     border: 1px solid var(--primary);
-    width: 200px;
-    height: 23px;
-    padding: 0 3px;
 }
 
-.buttons input{
-    border: none;
-    outline: none;
-    width: 161px;
-    height: 45px;
+
+input[type="submit"]{
     background-color: var(--primary);
-    border-radius: 4px;
     color: var(--white);
-    margin-top: 10px;
+    padding: 12px 24px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    margin-bottom: 30px;
 }
 
-.buttons input:hover{
+input[type="submit"]:hover{
     color: var(--secondary);
 }
 
@@ -55,35 +60,15 @@ form input{
 
 .result{
     border: 2px solid var(--primary);
-    width: 452px;
     padding: 30px;
-    margin-bottom: 30px;
-}
-
-.result h3{
-    font-weight: 600;
-    margin-bottom: 10px;
+    width: 522px;
 }
 
 .result p span{
-    width: 207px;
     display: inline-block;
+    width: 200px;
 }
 
-.function h3{
-    margin: 10px 0;
-    font-weight: 600;
-}
-
-
-.function p span{
-    display: inline-block;
-    width: 450px;
-    margin-bottom: 10px;
-}
-
-.function p .second{
-    background-color: aliceblue;
-    display: inline-block;
-    width: 500px;
+.result h3{
+    font-weight: bold;
 }

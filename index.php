@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="css/homepage.css">
     <title>Project No. 1</title>
 </head>
 <body>
@@ -14,8 +15,8 @@
         </div>
         
         <div class="list">
-            <ol>
-                <li><h3><a href="/pages/page1.php">Curicculum Vitae</a></h3></li>
+            <ul>
+                <li><h3><a href="pages/page1.php">Curicculum Vitae</a></h3></li>
                 <li><h3><a href="pages/page2.php">The Use of Variables</a></h3></li>
                 <li><h3><a href="pages/page3.php">Manipulating Numbers</a></h3></li>
                 <li><h3><a href="pages/page4.php">Using Math Functions</a></h3></li>
@@ -25,7 +26,7 @@
                 <li><h3><a href="pages/page8.php">User-defined Functions</a></h3></li>
                 <li><h3><a href="pages/page9.php">Single-defined Array</a></h3></li>
                 <li><h3><a href="pages/page10.php">Two-dimensional Array</a></h3></li>
-            </ol>
+            </ul>
         </div>    
     </div>
 </body>

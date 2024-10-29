@@ -1,0 +1,88 @@
+.box{
+    border: 2px solid var(--primary);
+    padding: 30px;
+    border-radius: 12px;
+}
+
+.back{
+    position: absolute;
+    right: 13%;
+}
+
+.title{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.title a:hover{
+    opacity: 0.5;
+}
+
+.title div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 54px;
+}
+
+.inputs, .results{
+    display: flex;
+    justify-content: space-between;
+}
+
+.inputs p{
+    margin-bottom: 10px;
+    width: ;
+}
+
+.results h3{
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+
+.inputs input{
+    width: 60px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    border: 1px solid var(--primary);
+    height: 23px;
+}
+
+.inputs input:last-of-type{
+    margin-right: 0;
+}
+
+.results p span{
+    margin-bottom: 10px;
+    margin-right: 35px;
+    padding: 0 3px;
+    display: inline-block;
+    width: 60px;
+    height: 23px;
+}
+
+.results p span:last-of-type{
+    margin-right: 0;
+}
+
+.button{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.buttons input{
+    width: 120px;
+    height: 45px;
+    background-color: var(--primary);
+    border-radius: 12px;
+    color: var(--white);
+    margin-top: 30px;
+    outline: none;
+    border: none;
+}
+
+.buttons input:hover{
+    color: var(--secondary);
+}
+

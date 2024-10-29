@@ -6,10 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>page 1</title>
     <link rel="stylesheet" href="../css/page1.css">
+    <link rel="stylesheet" href="../global.css">
     <script src="https://kit.fontawesome.com/51db7b286b.js" crossorigin="anonymous"></script>
 </head>
-<body >
-    <div">
+<body>
+    <div class="box">
+        <div class="title">
+            <p>
+                <div>
+                    <span class="h3"><a href="../index.php"><i class="fa-solid fa-arrow-left"></i></a></span>
+                    <span class="h2">Curriculum Vitae</span> 
+                    <span class="h3"><a href="page2.php"><i class="fa-solid fa-arrow-right"></i></a> </span>
+                    <span class="back"><a href="../index.php"><i class="fa-solid fa-house"></i></a></span>    
+                </div>
+            </p>
+        </div>
+
         <div class="info">
             <div>
                 <h1>Kianah Mae B. Suazo</h1>
@@ -43,7 +55,19 @@
             <hr class="vertical">
             <div class="profile">
                 <h2>PROFILE</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique perferendis doloribus dolores, expedita temporibus, eveniet error vitae at laboriosam adipisci quos? Numquam, illum amet? Possimus ut facilis corrupti unde officiis.</p>
+                <div class="personalInfo">
+                    <div class="profile1">
+                        <p>Age : 20 years old</p>
+                        <p>Birthdate : May 24, 2004</p>
+                        <p>Birthplace : Velez, Cebu City</p>
+                        <p>Sex : Female</p>
+                        <p>Status : Single</p>    
+                    </div>
+                    <div class="profile2">
+                        <p>Nationality : Filipino</p>    
+                        <p>Religion : Roman Catholic</p>    
+                    </div>    
+                </div>
             </div>
         </div>
         <hr>

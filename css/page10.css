@@ -1,0 +1,83 @@
+.box{
+    border: 2px solid var(--primary);
+    padding: 30px;
+    border-radius: 12px;
+    
+}
+
+.back{
+    position: absolute;
+    right: 13%;
+}
+
+.title{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.title a:hover{
+    opacity: 0.5;
+}
+
+.title div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 54px;
+}
+
+.divide{
+    display: flex;
+    justify-content: space-between;
+}
+
+.input label{
+    display: inline-block;
+    width: 172px;
+    margin-bottom: 20px;
+}
+
+.input input{
+    border: 1px solid var(--primary);
+    width: 199px;
+    height: 23px;
+}
+
+.divide input[type='submit']{
+    background-color: var(--primary);
+    outline: 0;
+    border: 0;
+    border-radius: 4px;
+    color: var(--white);
+    width: 247px;
+    height: 45px;
+    
+}
+
+.divide input[type='submit']:hover{
+    color: var(--secondary);
+}
+
+.table td{
+    padding: 0 5px;
+    border: 1px solid var(--primary);
+}
+
+.result{
+    border: 2px solid var(--primary);
+    padding: 30px 30px 0 30px;
+    width: 552px;
+}
+
+.result h3{
+    font-weight:600;
+}
+
+p span{
+    /* background-color: aqua; */
+    display: inline-block;
+    width: 500px;
+    margin-top: 10px;
+}
+
+

@@ -54,8 +54,9 @@
             for($j = 1; $j <= $m; $j++){
                 echo "<td>" . $j * $i . "</td>";
             }
-            echo "<tr>";
+            echo "</tr>";
         }
+        
         echo "</table>";
         echo "</div>";
         // n Fibonacci series

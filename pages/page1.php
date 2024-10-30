@@ -57,15 +57,15 @@
                 <h2>PROFILE</h2>
                 <div class="personalInfo">
                     <div class="profile1">
-                        <p>Age : 20 years old</p>
-                        <p>Birthdate : May 24, 2004</p>
-                        <p>Birthplace : Velez, Cebu City</p>
-                        <p>Sex : Female</p>
-                        <p>Status : Single</p>    
+                        <p><span>Age </span>: 20 years old</p>
+                        <p><span>Birthdate </span>: May 24, 2004</p>
+                        <p><span>Birthplace </span>: Velez, Cebu City</p>
+                        <p><span>Sex </span>: Female</p>
+                        <p><span>Status </span>: Single</p>    
                     </div>
                     <div class="profile2">
-                        <p>Nationality : Filipino</p>    
-                        <p>Religion : Roman Catholic</p>    
+                        <p><span>Nationality </span>: Filipino</p>    
+                        <p><span>Religion </span>: Roman Catholic</p>    
                     </div>    
                 </div>
             </div>

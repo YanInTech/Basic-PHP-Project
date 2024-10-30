@@ -17,7 +17,7 @@
 
 body{
     color: var(--black);
-    margin: 120px;
+    margin: 120px 120px 0px 120px;
 }
 
 h1{
@@ -70,13 +70,10 @@ label{
 }
 
 footer{
-    background-color: var(--primary);
-    width: 100%;
-    position: absolute;
-    left: 0;
-    transform: translateY(-50%);
+    border-top: 1px solid var(--primary);
+    position: relative;
+    bottom: 0;
+    transform: translateY(50%);
     text-align: center;
-    padding: 12px;
-    margin-top: 130px;
-    color: var(--secondary);
+    padding-bottom: 10px;
 }

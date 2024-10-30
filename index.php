@@ -33,5 +33,6 @@
 </html>
 
 <?php
+    
     include ('includes/footer.html');
 ?>

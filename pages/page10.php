@@ -8,23 +8,23 @@
     <script src="https://kit.fontawesome.com/51db7b286b.js" crossorigin="anonymous"></script>
     <title>Page 10</title>
 </head>
-<body class="box">
-    <div class="full">
-    <div class="title">
-        <p>
-            <div>
-                <span class="h3"><a href="page9.php"><i class="fa-solid fa-arrow-left"></i></a></span>
-                <span class="h2">Two-dimensional Array</span> 
-                <span class="h3"><a href="../index.php"><i class="fa-solid fa-arrow-right"></i></a> </span>
-                <span class="back"><a href="../index.php"><i class="fa-solid fa-house"></i></a></span>    
-            </div>
-        </p>
-        <p>Create an NxN array  and store integers in each cell</p>
-        <p>Display the sum and average of each row, columns, two diagonals, and overall numbers</p>
-        <p>Display the smallest and largest number in each row, column, and overall numbers</p>
-    </div>
+<body>
+    <div class="box">
+        <div class="title">
+            <p>
+                <div>
+                    <span class="h3"><a href="page9.php"><i class="fa-solid fa-arrow-left"></i></a></span>
+                    <span class="h2">Two-dimensional Array</span> 
+                    <span class="h3"><a href="../index.php"><i class="fa-solid fa-arrow-right"></i></a> </span>
+                    <span class="back"><a href="../index.php"><i class="fa-solid fa-house"></i></a></span>    
+                </div>
+            </p>
+            <p>Create an NxN array  and store integers in each cell</p>
+            <p>Display the sum and average of each row, columns, two diagonals, and overall numbers</p>
+            <p>Display the smallest and largest number in each row, column, and overall numbers</p>
+        </div>
 
-    <form action="page10.php" method="POST">
+        <form action="page10.php" method="POST">
         <div class="divide">
             <div class="input">
                 <div>
@@ -34,11 +34,16 @@
             <input type="submit" name="display" value="Generate numbers and table">
 
             <?php
-                if(isset($_POST['display'])){
-                    $n = $_POST['n'];
+                try{
+                    if(isset($_POST['display'])){
+                        $n = (int)$_POST['n'];
 
-                    createArray($n);
-                }    function createArray($n){
+                        createArray($n);
+                    }     
+                } catch (DivisionByZeroError $e){
+                    echo "Invalid integer input";
+                }
+                   function createArray($n){
                         $array = [];
 
                         echo "<table border='1' cellspacing='0' cellpadding='5' style='margin-top: 10px;' class='table'>";
@@ -52,20 +57,20 @@
                             echo "</tr>";
                         }
                         echo "</table>";
-                        echo "</div>";
+                        echo "</div>"; 
                         echo "<div class='result'>";
                         echo "<h3>Result</h3>";
                         rowColSumAve($array, $n);
                         twoDiagonalSumAve($array, $n);
                         smallLargeRowCol($array, $n);
                         overallSumAveMinMax($array, $n);
-                        include ('../includes/footer.html');
                         echo "</div>";
                     }
                 
             ?>
         </div>
-    </div>    
+    </div>   
+                </div> 
     </form>
 </body>
 </html>
@@ -202,3 +207,6 @@
     // createArray(3);
 ?>
 
+<?php
+    include ('../includes/footer.html');
+?>

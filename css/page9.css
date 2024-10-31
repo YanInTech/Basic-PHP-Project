@@ -1,42 +1,72 @@
-.box{
+/* Existing styles for box, title, and divide */
+.box {
     border: 2px solid var(--primary);
     padding: 30px;
     border-radius: 12px;
     box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.5);
 }
 
-.back{
+.back {
     position: absolute;
     right: 13%;
 }
 
-.title{
+.title {
     text-align: center;
     margin-bottom: 30px;
 }
 
-.title a:hover{
+.title a:hover {
     opacity: 0.5;
 }
 
-.title div{
+.title div {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 54px;
 }
 
-.divide{
+.divide {
     display: flex;
     justify-content: space-between;
 }
 
-.divide h3{
+.divide h3 {
     margin-bottom: 10px;
     font-weight: 600;
 }
 
-.divide .second{
+.divide .second {
     padding: 0 30px;
     width: 470px;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    .title div {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .divide {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .divide > div,
+    .divide .second {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    .title div {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .back {
+        position: static; /* Adjust "Back" icon position */
+    }
 }

@@ -1,56 +1,99 @@
-.box{
+/* Base styling */
+.box {
     border: 2px solid var(--primary);
     text-align: center;
-    padding: 30px 0;
+    padding: 30px 20px;
     border-radius: 12px;
     box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.5);
+    max-width: 90%;
+    margin: 0 auto;
 }
 
-.nameSection{
+.nameSection {
     margin-bottom: 30px;
 }
 
-.list ul{
+.list ul {
     list-style-type: none;
+    padding: 0;
 }
 
-.list ul li{
+.list ul li {
     margin-bottom: 12px;
 }
 
-.list ul li:hover{
+.list ul li:hover {
     background-color: var(--primary);
-    transform: scaleY(1.5);
+    transform: scaleY(1.05);
 }
 
-.list ul li a:hover{
+.list ul li a:hover {
     color: var(--secondary);
 }
 
-.list ul li a::before{
-    content: ""; /* Empty content by default*/
+.list ul li a::before,
+.list ul li a::after {
+    content: "";
     position: relative;
-    bottom: 10%;
-    right: 3%;
-    transform: scaleY(0); /* Hide dash initially*/
+    transform: scaleY(0);
 }
 
-.list ul li a::after{
-    content: ""; /* Empty content by default*/
-    position: relative;
-    bottom: 10%;
-    left: 3%;
-    transform: scaleY(0); /* Hide dash initially*/
-}
-
-.list ul li a:hover::before{
-    content: "\2014"; /* dash symbol appears when hovered*/
-    transform: scaleY(1.5);
+.list ul li a:hover::before {
+    content: "\2014"; /* dash symbol */
+    transform: scaleY(1.2);
     color: var(--secondary);
 }
 
-.list ul li a:hover::after{
-    content: "\2014"; /* dash symbol appears when hovered*/
-    transform: scaleY(1.5);
+.list ul li a:hover::after {
+    content: "\2014"; /* dash symbol */
+    transform: scaleY(1.2);
     color: var(--secondary);
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .box {
+        padding: 20px 10px;
+    }
+
+    .nameSection h2 {
+        font-size: 1.5em;
+    }
+
+    .list ul li h3 {
+        font-size: 1.2em;
+    }
+
+    .list ul li {
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .box {
+        padding: 15px 5px;
+    }
+
+    .nameSection h2 {
+        font-size: 1.2em;
+    }
+
+    .list ul li h3 {
+        font-size: 1em;
+    }
+
+    .list ul li {
+        margin-bottom: 8px;
+        padding: 8px;
+    }
+    
+    .list ul li:hover {
+        transform: none; /* Disable scale effect for small screens */
+    }
+
+    .list ul li a:hover::before,
+    .list ul li a:hover::after {
+        transform: none; /* Simplify hover effects on small screens */
+    }
 }

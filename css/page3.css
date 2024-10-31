@@ -74,3 +74,37 @@ input[type="submit"]:hover{
 .result h3{
     font-weight: bold;
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .divide {
+        display: block;
+    }
+
+    .title div {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .back {
+        position: static; /* Adjust "Back" icon position */
+    }
+
+    .result, form {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    label, input {
+        width: 100%;
+    }
+
+    .result p span {
+        width: auto;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+    }
+}

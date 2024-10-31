@@ -87,3 +87,44 @@
     color: var(--secondary);
 }
 
+/* Container styling */
+.box {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Inputs and results container styling */
+.inputs, .results {
+    display: flex;
+    gap: 20px;
+}
+
+/* Stacks on top of each other on small screens */
+@media (max-width: 768px) {
+    .inputs, .results {
+        flex-direction: column;
+    }
+
+    .title div,
+    .inputs div,
+    .results div {
+        width: 100%;
+    }
+
+    .title div {
+        flex-direction: column; /* Stack navigation icons vertically */
+        gap: 20px;
+    }
+
+    .back {
+        position: static; /* Adjust "Back" icon position */
+    }
+}
+
+/* For larger screens - side by side */
+@media (min-width: 769px) {
+    .inputs div, .results div {
+        width: 50%;
+    }
+}

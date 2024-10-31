@@ -120,3 +120,95 @@
     border-right: 1px solid black;
 }
 
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .box {
+        padding: 20px 8px;
+    }
+
+    .title div {
+        gap: 30px;
+    }
+
+    .info {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 60px;
+    }
+
+    .infoPic {
+        width: 180px;
+        height: 180px;
+        margin-bottom: 20px;
+    }
+
+    /* Hide the vertical line on smaller screens */
+    .vertical {
+        display: none;
+    }
+
+    /* Stack .contactProfile and .educationSkills sections vertically */
+    .contactProfile, .educationSkills {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .contact, .profile, .education, .skills {
+        text-align: center;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .box {
+        padding: 15px;
+    }
+
+    .title div {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .infoPic {
+        width: 150px;
+        height: 150px;
+    }
+
+    .contactProfile, .educationSkills {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contact, .profile, .education, .skills {
+        text-align: left;
+        padding: 10px;
+    }
+
+    .contact i, .profile span, .skills span {
+        margin-right: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .title div {
+        gap: 10px;
+    }
+
+    .contact p, .profile p, .skills span {
+        font-size: 0.9em;
+    }
+
+    .infoPic {
+        width: 120px;
+        height: 120px;
+    }
+
+    .contact h2, .profile h2, .education h2, .skills h2 {
+        font-size: 1.2em;
+    }
+
+    .skills span:not(:last-of-type) {
+        border-right: none; /* Remove borders on very small screens */
+    }
+}

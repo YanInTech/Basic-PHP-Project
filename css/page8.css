@@ -1,33 +1,32 @@
-.box{
+.box {
     border: 2px solid var(--primary);
     padding: 30px;
     border-radius: 12px;
     box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.5);
-
 }
 
-.back{
+.back {
     position: absolute;
     right: 13%;
 }
 
-.title{
+.title {
     text-align: center;
     margin-bottom: 30px;
 }
 
-.title a:hover{
+.title a:hover {
     opacity: 0.5;
 }
 
-.title div{
+.title div {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 54px;
 }
 
-form input{
+form input {
     margin: 10px 0;
     border: 1px solid var(--primary);
     width: 200px;
@@ -35,7 +34,7 @@ form input{
     padding: 0 3px;
 }
 
-.buttons input{
+.buttons input {
     border: none;
     outline: none;
     width: 161px;
@@ -46,46 +45,74 @@ form input{
     margin-top: 10px;
 }
 
-.buttons input:hover{
+.buttons input:hover {
     color: var(--secondary);
 }
 
-.divide{
+.divide {
     display: flex;
     justify-content: space-between;
 }
 
-.result{
+.result {
     border: 2px solid var(--primary);
     width: 452px;
     padding: 30px;
     margin-bottom: 30px;
 }
 
-.result h3{
+.result h3 {
     font-weight: 600;
     margin-bottom: 10px;
 }
 
-.result p span{
+.result p span {
     width: 207px;
     display: inline-block;
 }
 
-.function h3{
+.function h3 {
     margin: 10px 0;
     font-weight: 600;
 }
 
-
-.function p span{
+.function p span {
     display: inline-block;
     width: 450px;
     margin-bottom: 10px;
 }
 
-.function p .second{
+.function p .second {
     background-color: aliceblue;
     display: inline-block;
     width: 500px;
+}
+
+/* Media Query for Responsive Layout */
+@media (max-width: 768px) {
+    .divide {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .result, .function p span {
+        width: 100%;
+    }
+
+    .title div {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .back {
+        position: static; /* Adjust "Back" icon position */
+    }
+
+    form input {
+        width: 100%;
+    }
+
+    .buttons input {
+        width: 100%;
+    }
 }

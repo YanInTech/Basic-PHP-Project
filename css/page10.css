@@ -1,49 +1,51 @@
-.box{
+/* Existing styles */
+.box {
     border: 2px solid var(--primary);
     padding: 30px;
     border-radius: 12px;
     box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.5);
 }
 
-.back{
+.back {
     position: absolute;
     right: 13%;
 }
 
-.title{
+.title {
     text-align: center;
     margin-bottom: 30px;
 }
 
-.title a:hover{
+.title a:hover {
     opacity: 0.5;
 }
 
-.title div{
+.title div {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 54px;
 }
 
-.divide{
+.divide {
     display: flex;
     justify-content: space-between;
+    gap: 20px; /* Optional gap between stacked items */
 }
 
-.input label{
+.input label {
     display: inline-block;
     width: 172px;
     margin-bottom: 20px;
 }
 
-.input input{
+.input input {
     border: 1px solid var(--primary);
     width: 199px;
     height: 23px;
 }
 
-.divide input[type='submit']{
+.divide input[type='submit'] {
     background-color: var(--primary);
     outline: 0;
     border: 0;
@@ -53,30 +55,68 @@
     height: 45px;
 }
 
-.divide input[type='submit']:hover{
+.divide input[type='submit']:hover {
     color: var(--secondary);
 }
 
-.table td{
+.table td {
     padding: 0 5px;
     border: 1px solid var(--primary);
 }
 
-.result{
+.result {
     border: 2px solid var(--primary);
     padding: 30px;
-    width: 552px;
+    width: 100%; /* make it responsive */
+    max-width: 552px; /* keeps container from stretching too wide */
+    word-wrap: break-word; /* allows long words to break and wrap to the next line */
+    box-sizing: border-box;
 }
 
-.result h3{
-    font-weight:600;
+.result p {
+    display: flex;
+    flex-wrap: wrap;
+    word-break: break-word;
 }
 
-p span{
-    /* background-color: aqua; */
+.result h3 {
+    font-weight: 600;
+}
+
+p span {
     display: inline-block;
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
     margin-top: 10px;
+    word-wrap: break-word;
 }
 
+/* Responsive styling */
+@media (max-width: 768px) {
+    .divide {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+    }
 
+    .input label,
+    .input input,
+    .result {
+        width: 100%; /* Full width on small screens */
+        max-width: 100%; /* Remove max-width constraints */
+    }
+
+    .back {
+        right: 10px; /* Adjust icon positioning */
+    }
+
+    .title div {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .back {
+        position: static; /* Adjust "Back" icon position */
+    }
+
+    
+}

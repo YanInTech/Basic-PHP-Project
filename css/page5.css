@@ -31,7 +31,13 @@
     justify-content: space-between;
 }
 
-
+.content {
+    max-height: 300px; /* Set a maximum height for the content area */
+    overflow-y: auto; /* Allow vertical scrolling if content exceeds max height */
+    overflow-x: hidden; /* Hide horizontal overflow */
+    width: 100%; /* Ensure it uses the full width of its container */
+    padding: 10px; /* Optional: add some padding */
+}
 
 .content p{
     width: 498px;
@@ -69,4 +75,32 @@
 
 .buttons input:hover{
     color: var(--secondary);
+}
+
+@media (max-width: 768px) {
+    .divide {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+    }
+    
+    .title div {
+        flex-direction: column; /* Stack navigation icons vertically */
+        gap: 20px;
+    }
+
+    .back {
+        position: static; /* Adjust "Back" icon position */
+    }
+
+    .button{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .buttons {
+        flex-direction: column; /* Ensure buttons stack vertically */
+        align-items: center;     /* Center buttons on smaller screens */
+        gap: 10px;
+    }
 }

@@ -70,3 +70,28 @@
     width: 157px;
 }
 
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .title div {
+        flex-direction: column; /* Stack navigation icons vertically */
+        gap: 20px;
+    }
+
+    .back {
+        position: static; /* Adjust "Back" icon position */
+    }
+    
+    .divide {
+        flex-direction: column; /* Stack elements vertically */
+        height: auto; /* Allow height to adjust based on content */
+    }
+
+    .input, .result {
+        width: 100%; /* Make input and result sections full width */
+        margin-bottom: 20px; /* Add space between stacked elements */
+    }
+    
+    .input input {
+        width: 100%; /* Inputs take full width */
+    }
+}

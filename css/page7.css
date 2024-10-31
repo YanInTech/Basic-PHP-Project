@@ -1,84 +1,119 @@
-.box{
+/* Existing styles */
+.box {
     border: 2px solid var(--primary);
     padding: 30px;
     border-radius: 12px;
     box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.5);
 }
 
-.back{
+.back {
     position: absolute;
     right: 13%;
 }
 
-.title{
+.title {
     text-align: center;
     margin-bottom: 30px;
 }
 
-.title a:hover{
+.title a:hover {
     opacity: 0.5;
 }
 
-.title div{
+.title div {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 54px;
 }
 
-.input{
+.input {
     margin-bottom: 20px;
 }
 
-.input label{
+.input label {
     display: inline-block;
     width: 172px;
 }
 
-.input input{
+.input input {
     border: 1px solid var(--primary);
     width: 199px;
     height: 23px;
     padding: 0 3px;
 }
 
-input[type='submit']{
+input[type='submit'] {
     background-color: var(--primary);
     color: var(--white);
     padding: 12px 24px;
     border-radius: 4px;
-    position: relative;
-    left: 81%;
     outline: none;
     border: none;
     margin-bottom: 30px;
 }
 
-input[type='submit']:hover{
+input[type='submit']:hover {
     color: var(--secondary);
 }
 
-.result{
+.result {
     padding: 10px 0;
     font-weight: 600;
 }
 
-p span{
+p span {
     display: inline-block;
     width: 209px;
     margin-bottom: 10px;
 }
 
-.divide{
+/* Responsive stacking styles */
+.divide {
     display: flex;
     justify-content: space-between;
 }
 
-.table td{
+.table td {
     padding: 0 5px;
 }
 
-.right{
+.right {
     width: 513px;
 }
 
+/* Media Query for Responsive Layout */
+@media (max-width: 768px) {
+    .divide {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .right, .table {
+        width: 100%;
+        text-align: center;
+    }
+
+    input[type='submit'] {
+        left: 0;
+        width: 100%;
+    }
+
+    .title div {
+        flex-direction: column; /* Stack navigation icons vertically */
+        gap: 20px;
+    }
+
+    .back {
+        position: static; /* Adjust "Back" icon position */
+    }
+
+    .input label {
+        width: 100%;
+        text-align: left;
+    }
+
+    .input input {
+        width: 100%;
+    }
+}

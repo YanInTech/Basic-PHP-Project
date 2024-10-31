@@ -51,11 +51,11 @@
                     <?php
                         try{
                             if(isset($_POST['display'])){
-                                $int1 = $_POST['num1'];
-                                $int2 = $_POST['num2'];
-                                $int3 = $_POST['num3'];
-                                $int4 = $_POST['num4'];
-                                $int5 = $_POST['num5'];
+                                $int1 = (int)$_POST['num1'];
+                                $int2 = (int)$_POST['num2'];
+                                $int3 = (int)$_POST['num3'];
+                                $int4 = (int)$_POST['num4'];
+                                $int5 = (int)$_POST['num5'];
 
                                 $str1 = $_POST['str1'];
                                 $str2 = $_POST['str2'];

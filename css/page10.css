@@ -43,6 +43,7 @@
     border: 1px solid var(--primary);
     width: 199px;
     height: 23px;
+    padding: 0 3px;
 }
 
 .divide input[type='submit'] {

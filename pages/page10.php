@@ -29,7 +29,7 @@
             <div class="input">
                 <div>
                 <label>Enter the value of n:</label>
-                <input type="text" name="n">     
+                <input type="number" name="n" required min="1" max="10" placeholder="Enter number 1-10">     
                 </div>
             <input type="submit" name="display" value="Generate numbers and table">
 

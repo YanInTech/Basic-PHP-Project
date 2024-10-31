@@ -28,11 +28,11 @@
         <form action="page7.php" method="POST">
             <div class="input">
                 <label>Enter the value of n:</label>
-                <input type="text" name="n" placeholder="Enter number 1 - 10" required>    
+                <input type="number" name="n" placeholder="Enter number 1 - 10" required min="1" max ="10">    
             </div>
             <div class="input">
                 <label>Enter the value of m:</label>
-                <input type="text" name="m" placeholder="Enter number 1 - 10" required>    
+                <input type="number" name="m" placeholder="Enter number 1 - 10" required min="1" max ="10">    
             </div>
 
             <input type="submit" name="display" value="Display and compute">
